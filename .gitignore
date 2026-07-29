@@ -1,0 +1,7 @@
+# Logs & Temp Files
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.idea/
