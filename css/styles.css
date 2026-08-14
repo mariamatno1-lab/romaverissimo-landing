@@ -1,6 +1,6 @@
 /* ==========================================================================
    Romaverissimo Oficina Mecânica, Auto Elétrico e Autopeças
-   Design System & Styling (Design Sóbrio, Elegante e Sem Glow)
+   Design System & Styling (Design Sóbrio, Elegante, Linguagem Direta e Sem Glow)
    Paleta: Vermelho Sólido (#E50914), Preto (#0B0B0B), Grafite (#141414), Branco (#FFFFFF)
    ========================================================================== */
 
@@ -225,7 +225,7 @@ img {
 
 .brand-name {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: var(--text-white);
   line-height: 1.1;
@@ -233,21 +233,20 @@ img {
 }
 
 .brand-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--primary-red);
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
 }
 
 .nav-link {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--text-white);
   opacity: 0.85;
@@ -262,12 +261,6 @@ img {
   display: flex;
   align-items: center;
   gap: 14px;
-}
-
-.header-phone-btn {
-  padding: 10px 18px;
-  font-size: 0.9rem;
-  border-color: rgba(255,255,255,0.25);
 }
 
 .header-cta-btn {
@@ -351,13 +344,13 @@ img {
 }
 
 .hero-title {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   letter-spacing: -0.03em;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: var(--text-muted-dark);
   margin-bottom: 36px;
   line-height: 1.6;
@@ -424,7 +417,7 @@ img {
   color: var(--text-muted-dark);
 }
 
-/* TRUST SECTION (LIGHT BG) */
+/* TRUST SECTION (LIGHT BG - The 4 Core Service Pillars) */
 .trust-section {
   padding: 90px 0;
   background-color: var(--bg-light);
@@ -482,15 +475,20 @@ img {
 }
 
 .trust-card-title {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: var(--text-dark);
-  font-weight: 700;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.trust-card-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted-light);
+  line-height: 1.5;
 }
 
 
-/* ==========================================================================
-   3.5 ABOUT SECTION ("Sobre a Romaverissimo") - Fixed 2 Column Layout
-   ========================================================================== */
+/* ABOUT SECTION ("Sobre a Romaverissimo") */
 .about-section {
   padding: 90px 0 !important;
   background-color: #F8F9FA !important;
@@ -580,7 +578,6 @@ img {
   border-bottom: 1px solid var(--border-dark);
 }
 
-/* Service Category Tabs */
 .category-tabs {
   display: flex;
   justify-content: center;
@@ -694,7 +691,6 @@ img {
   gap: 10px;
 }
 
-/* Service Bottom Callout Box (Clean Solid Border, No Glow) */
 .service-missing-box {
   background-color: var(--bg-dark-card);
   border: 2px solid var(--primary-red);
@@ -717,6 +713,135 @@ img {
   color: var(--text-muted-dark);
   font-size: 1.05rem;
 }
+
+
+/* ==========================================================================
+   NEW SECTION: TRANSMISSION OIL EXCHANGE (#cambio-automatico)
+   ========================================================================== */
+.transmission-section {
+  padding: 100px 0;
+  background-color: #0D0D0D;
+  border-top: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.transmission-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+}
+
+.transmission-content {
+  flex: 1 1 58%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.transmission-title {
+  font-size: 2.3rem;
+  color: var(--text-white);
+  margin-top: 14px;
+  margin-bottom: 22px;
+  line-height: 1.25;
+}
+
+.transmission-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted-dark);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.transmission-desc:last-of-type {
+  margin-bottom: 28px;
+}
+
+/* Compact 4-points Feature List */
+.transmission-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.transmission-feature-item {
+  background-color: var(--bg-dark-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.transmission-feature-item i {
+  color: var(--primary-red);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Complementary Block: Quando procurar a oficina? */
+.transmission-warning-box {
+  background-color: var(--bg-dark-card);
+  border: 1px solid var(--border-dark);
+  border-left: 4px solid var(--primary-red);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.transmission-warning-title {
+  font-size: 1.15rem;
+  color: var(--text-white);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transmission-warning-text {
+  font-size: 0.95rem;
+  color: var(--text-muted-dark);
+  line-height: 1.6;
+}
+
+.transmission-image-column {
+  flex: 0 0 38%;
+  width: 38%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.transmission-image-wrapper {
+  width: 100%;
+  max-width: 420px;
+  height: 480px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-dark);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+  background-color: var(--bg-dark-card);
+}
+
+.transmission-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
 
 /* PAIN & SYMPTOMS SECTION (LIGHT BG) */
 .symptoms-section {
@@ -1071,7 +1196,7 @@ img {
 }
 
 .final-cta-title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   margin-bottom: 16px;
 }
 
@@ -1232,7 +1357,7 @@ img {
   }
 }
 
-/* Stack About Section ONLY on Screens <= 768px (Mobile & Small Tablets) */
+/* Stack About & Transmission Sections ONLY on Screens <= 768px */
 @media (max-width: 768px) {
   body {
     padding-bottom: 74px; /* Space for mobile sticky bar */
@@ -1250,27 +1375,31 @@ img {
     font-size: 2.2rem;
   }
 
-  .about-grid {
+  .about-grid, .transmission-grid {
     flex-direction: column !important;
     gap: 36px !important;
   }
 
-  .about-content {
+  .about-content, .transmission-content {
     flex: 1 1 100% !important;
     max-width: 100% !important;
   }
 
-  .about-title {
+  .about-title, .transmission-title {
     font-size: 1.85rem !important;
   }
 
-  .about-image-column {
+  .transmission-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-column, .transmission-image-column {
     flex: 1 1 100% !important;
     width: 100% !important;
     justify-content: center !important;
   }
 
-  .about-image-wrapper {
+  .about-image-wrapper, .transmission-image-wrapper {
     max-width: 100% !important;
     height: 360px !important;
   }
