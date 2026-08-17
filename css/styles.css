@@ -570,7 +570,7 @@ img {
 }
 
 
-/* SERVICES SECTION WITH CARD THUMBNAIL IMAGES */
+/* SERVICES SECTION WITH UNIQUE NON-REPEATED CARD IMAGES & CHECKLISTS */
 .services-section {
   padding: 100px 0;
   background-color: #121212;
@@ -606,28 +606,13 @@ img {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.service-category-group {
-  margin-bottom: 48px;
-}
-
-.category-header-title {
-  font-size: 1.6rem;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--border-dark);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--text-white);
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 28px;
 }
 
-/* Service Card with Image Header */
+/* Service Card with Unique Image Header */
 .service-card {
   background-color: var(--bg-dark-card);
   border: 1px solid var(--border-dark);
@@ -642,12 +627,12 @@ img {
 .service-card:hover {
   transform: translateY(-4px);
   border-color: var(--primary-red);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.6);
 }
 
 .service-card-img-wrapper {
   width: 100%;
-  height: 175px;
+  height: 200px;
   overflow: hidden;
   position: relative;
   background-color: #1A1A1A;
@@ -666,7 +651,7 @@ img {
 }
 
 .service-card-body {
-  padding: 24px;
+  padding: 26px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -681,20 +666,20 @@ img {
 }
 
 .service-icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-color: rgba(229, 9, 20, 0.15);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary-red);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   flex-shrink: 0;
 }
 
 .service-title {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-white);
   line-height: 1.3;
@@ -704,11 +689,34 @@ img {
   font-size: 0.95rem;
   color: var(--text-muted-dark);
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+}
+
+.service-checklist {
+  margin: 12px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px dashed var(--border-dark);
+  padding-top: 14px;
+}
+
+.service-checklist li {
+  font-size: 0.88rem;
+  color: #CCCCCC;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-checklist li i {
+  color: var(--primary-red);
+  font-size: 0.8rem;
+  flex-shrink: 0;
 }
 
 .service-cta-link {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--primary-red);
   display: inline-flex;
